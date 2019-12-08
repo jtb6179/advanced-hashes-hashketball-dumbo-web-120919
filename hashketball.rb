@@ -235,7 +235,7 @@ def long_name_steals_a_ton?
   steal_number = 0
   game_hash.each do |location, team_data|
     team_data[:players].each do |value|
-      binding.pry 
+      #binding.pry 
       if value[:steals] > steal_number
        
       steal_number = value[:steals]
