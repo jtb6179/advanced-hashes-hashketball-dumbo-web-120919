@@ -242,5 +242,5 @@ def long_name_steals_a_ton?
       end
     end
   end
-  name_with_steal 
+  name_with_steal == steal_number
 end
