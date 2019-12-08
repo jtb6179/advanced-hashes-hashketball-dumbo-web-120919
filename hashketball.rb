@@ -221,7 +221,8 @@ def player_with_longest_name
     team_data[:players].each do |name|
       #
       if name[:player_name].length > longest
-        player_name = namebinding.pry
+        
+        player_name = name binding.pry
       end
     end
   end
