@@ -220,7 +220,7 @@ def player_with_longest_name
     i = 0 
     team_data[:players].each do |name|
       binding.pry
-      if name.length > longest
+      if name[:player_name].length > longest
         player_name = name
       end
     end
