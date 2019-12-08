@@ -239,7 +239,7 @@ def long_name_steals_a_ton?
       if value[:steals] > steal_number
        
       steal_number = value[:steals]
-        name_with_steal = name
+        name_with_steal = value[:steals]
       end
     end
   end
