@@ -235,13 +235,12 @@ def long_name_steals_a_ton?
   steal_number = 0
   game_hash.each do |location, team_data|
     team_data[:players].each do |value|
-      #binding.pry 
       if value[:steals] > steal_number
-       
+       #binding.pry
       steal_number = value[:steals]
         name_with_steal = value[:steals]
       end
     end
   end
-  name_with_steal == player_with_longest_name
+  name_with_steal 
 end
