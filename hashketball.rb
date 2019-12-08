@@ -197,11 +197,11 @@ def most_points_scored
 def winning_team
   home_team = 0
   away_team = 0
-  game_hash[:home][:players].each do |name, value|
+  game_hash[:home][:players].each do |value|
     #binding.pry
     home_team += value[:points]
   end
-  game_hash[:away][:players].each do |name, value|
+  game_hash[:away][:players].each do |value|
     away_team += value[:points]
   end
   if home_team > away_team
@@ -226,7 +226,7 @@ def player_with_longest_name
   player_name
 end
 
-def long_name_steals_a_ton
+def long_name_steals_a_ton?
   name_with_steal = nil
   steal_number = 0
   game_hash.each do |location, team_data|
