@@ -221,7 +221,8 @@ def player_with_longest_name
       #
       if name[:player_name].length > longest
          player_name = name[:player_name]
-         binding.prylongest += 1
+         binding.pry 
+         longest = name[:player_name].length
       end
       
     end
