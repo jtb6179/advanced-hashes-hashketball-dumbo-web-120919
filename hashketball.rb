@@ -223,6 +223,7 @@ def player_with_longest_name
          player_name = name[:player_name]
          binding.pry
       end
+      longest += 1
     end
   end
   player_name
